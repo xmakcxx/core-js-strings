@@ -380,7 +380,7 @@ function findLongestWord(str) {
  */
 function reverseWords(str) {
   const a = str.split(' ');
-  const b = a.map(function (g) {
+  const b = a.map((g) => {
     return g.split('').reverse().join('');
   });
   return b.join(' ');
@@ -399,7 +399,7 @@ function reverseWords(str) {
  */
 function invertCase(str) {
   const a = str.split('');
-  const b = a.map(function (g) {
+  const b = a.map((g) => {
     if (g !== g.toUpperCase()) {
       return g.toUpperCase();
     }
